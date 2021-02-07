@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand" href="#">
           <div class="brand">
-            <img src="./images/discoursewhite.png" alt="Discourse Logo" />
+            <img src="./images/discoursewhite.svg" alt="Discourse Logo" />
           </div>
         </a>
         <button
@@ -39,7 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Start a Discussion</a>
+              <!--  dropdown -->
+              <a class="nav-link" href="./pages/community.html">Check Out a Community</a>
+              <!-- dropdown-toggle  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Politics</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Software</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Environment</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Biology</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Literature</a>
+              </div> -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
@@ -48,7 +60,7 @@
         </div>
       </nav>
       <div class="catch-phrase">
-        <p>Get Off Your Soapbox and Start a Conversation</p>
+        <p>get off your soapbox &amp; <br> <span class='emphasis'>Start a Conversation</span></p>
       </div>
     </header>
     <aside class="leftnav"></aside>
@@ -144,35 +156,54 @@
           </div>
         </div>
       </article>
-      <div class="outer-container">
+
       <div class="read-more-communities-container">
-        <section>
-          <div class="someting-to-read">
+          <div class="something-to-read">
             <h1>Something to Read</h1>
             <div class="essay-card">
               <div class="essay-card-info">
                 <div class="trending-author">Kaladin Stormy</div>
-                <div class="trending-title">Response: Chuck Norris is still the best and why you'd better
-                    believe it.</div>
-                <p>Another omission in Act 2, Scene 5 is much of the dialogue between Osric and Hamlet. Their interaction in the text paints Osric as a bit of a buffoon, a character to offer some comedic relief before the tragic climax of the play. Zeffirelli chooses to cut out the lines that indicate Osric’s foolishness, and the majority of Hamlet’s witty responses to him. Zeffirelli instead uses Olric’s character as a solemn indication of the climax to come</p>
+                <div class="trending-title">
+                  Response: Chuck Norris is still the best and why you'd better
+                  believe it.
+                </div>
+                <p>
+                  Another omission in Act 2, Scene 5 is much of the dialogue
+                  between Osric and Hamlet. Their interaction in the text paints
+                  Osric as a bit of a buffoon, a character to offer some comedic
+                  relief before the tragic climax of the play. Zeffirelli
+                  chooses to cut out the lines that indicate Osric’s
+                  foolishness, and the majority of Hamlet’s witty responses to
+                  him. Zeffirelli instead uses Olric’s character as a solemn
+                  indication of the climax to come
+                </p>
                 <div class="trending-date-length">
-                    <time datetime="3-12-2021">Mar 12, 2021</time> - 2 min read
-                  </div>
+                  <time datetime="3-12-2021">Mar 12, 2021</time> - 2 min read
+                </div>
               </div>
               <div class="circle red"></div>
             </div>
             <div class="essay-card">
               <div class="essay-card-info">
                 <div class="trending-author">Bruce Lee</div>
-              <div class="trending-title">
-                Response: Why Chuck Norris isn't even that big of a deal.
-              </div>
-                <p>At the beginning of scene two, Zeffirelli omits Hamlet’s recount of his journey towards England and subsequent return. In the film, he instead chooses a visual telling of this story several scenes earlier. This encourages a more chronological timeline, yet in doing so, we lose a meaningful encounter between Horatio and Hamlet. From Horatio’s simple one-line responses it is pretty clear that the purpose of this display in the text is to explain </p>
+                <div class="trending-title">
+                  Response: Why Chuck Norris isn't even that big of a deal.
+                </div>
+                <p>
+                  At the beginning of scene two, Zeffirelli omits Hamlet’s
+                  recount of his journey towards England and subsequent return.
+                  In the film, he instead chooses a visual telling of this story
+                  several scenes earlier. This encourages a more chronological
+                  timeline, yet in doing so, we lose a meaningful encounter
+                  between Horatio and Hamlet. From Horatio’s simple one-line
+                  responses it is pretty clear that the purpose of this display
+                  in the text is to explain
+                </p>
                 <div class="trending-date-length">
-                    <time datetime="3-9-2021">Mar 11, 2021</time> - 7 min read
-                  </div>
-            </div>
-            <div class="circle blue"></div>
+                  <time datetime="3-9-2021">Mar 11, 2021</time> - 7 min read
+                </div>
+              </div>
+              <div class="circle blue"></div>
             </div>
             <div class="essay-card">
               <div class="essay-card-info">
@@ -180,15 +211,23 @@
                 <div class="trending-title">
                   Why I'm not even that big of a deal.
                 </div>
-                <p>In his film adaptation of William Shakespeare’s classic tragedy Hamlet, Franco Zeffirelli removes key elements of the text in favor of visual explanations and a more chronological performance. In doing so, he strips some of the depth from the characters and tells it as he sees it. While this can make Shakespeare’s plays easier to understand for modern audiences, it removes much of the tension, humor and other emotions that are both implied an</p>
+                <p>
+                  In his film adaptation of William Shakespeare’s classic
+                  tragedy Hamlet, Franco Zeffirelli removes key elements of the
+                  text in favor of visual explanations and a more chronological
+                  performance. In doing so, he strips some of the depth from the
+                  characters and tells it as he sees it. While this can make
+                  Shakespeare’s plays easier to understand for modern audiences,
+                  it removes much of the tension, humor and other emotions that
+                  are both implied an
+                </p>
                 <div class="trending-date-length">
-                    <time datetime="3-9-2021">Mar 9, 2021</time> - 777 min read
-                  </div>
-            </div>
-            <div class="circle orange"></div>
+                  <time datetime="3-9-2021">Mar 9, 2021</time> - 777 min read
+                </div>
+              </div>
+              <div class="circle orange"></div>
             </div>
           </div>
-        </section>
         <aside class="communities">
           <h1>Join a Community</h1>
           <ul>
@@ -200,7 +239,6 @@
           </ul>
         </aside>
       </div>
-    </div>
     </main>
     <footer>
       <span>Copyright &copy; 2021 Jonathan Wilding</span>
