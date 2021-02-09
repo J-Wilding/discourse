@@ -14,13 +14,25 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #726C61;
+}
+
+a:hover {
+  color: #800033 !important;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+
 header.topnav {
   background-image: url(../images/pexels-oleg-magni-1040473.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   top: 0%;
   left: 0%;
@@ -108,6 +120,13 @@ article > h1 {
 
 .top {
   display: flex;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding-left: 1em ;
+}
+
+.top:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .trending-article {
@@ -127,7 +146,7 @@ article > h1 {
   font-size: 1.25rem;
   font-weight: bold;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -146,21 +165,26 @@ article > h1 {
 .something-to-read {
   padding: 2rem 5vw;
   width: 90%;
+  color: #726C61;
+  margin: auto;
 }
 
-/* section */
-
 .essay-card {
-  /* flex: 2 1 2; */
+  border-radius: 5px;
+  margin-bottom: 1em;
   display: flex;
   padding: 2rem 0;
   align-items: center;
-  /* justify-content: space-between; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.essay-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .essay-card-info {
-  width: 70%;
-  padding-left: 2rem;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .essay-card-info > p {
@@ -171,20 +195,20 @@ article > h1 {
 }
 
 .circle {
-  /* margin-left: 1rem; */
+  margin-left: .65rem;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-.red {
+/* .red {
   background-color: #214478;
-}
-.blue {
+} */
+/* .blue {
   background-color: #672178;
 }
 .orange {
   background-color: #aa0044;
-}
+} */
 
 .communities {
   /* flex: 1 1 3; */
@@ -197,7 +221,6 @@ article > h1 {
   font-size: 1.5rem;
   color: #3f3338;
   margin-left: 1.25rem;
-  text-decoration: none;
 }
 
 .communities a:hover {
@@ -232,6 +255,75 @@ footer > a:hover {
   transition: 0.2s;
 }
 
+blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-picture > div {
+  width: fit-content;
+  padding: 20px;
+}
+
+.profile-picture > img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 986px) {
+  .trending-discussions {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "1 2"
+    "3 4"
+    "5 6";
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .trending-discussions {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .read-more-communities-container {
+    flex-direction: column;
+  }
+  
+  .communities {
+    order: -1;
+  }
+  
+  .something-to-read {
+    padding: 1rem 0;
+    grid-area: read-more;
+  }
+  
+  .brand > img {
+    width: 300px;
+  }
+  
+  .catch-phrase > p {
+    font-size: 2.7rem;
+  }
+
+  .emphasis {
+    font-size: 3.4rem;
+  }
+}
+
+
 @media only screen and (max-width: 524px) {
   header.topnav {
     height: 100vh;
@@ -245,46 +337,13 @@ footer > a:hover {
   .catch-phrase {
     width: 90%;
   }
+
   .catch-phrase > p {
-    font-size: 1.3rem;
+    font-size: 2.3rem;
     padding: 0px;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .trending-discussions {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .read-more-communities-container {
-    flex-direction: column;
-  }
-
-  .communities {
-    order: -1;
-  }
-
-  .something-to-read {
-    padding: 2rem;
-    grid-area: read-more;
-  }
-
-  .brand > img {
-    width: 300px;
-  }
-
-  .catch-phrase > p {
-    font-size: 3.2rem;
-  }
-}
-
-@media only screen and (max-width: 986px) {
-  .trending-discussions {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "1 2"
-      "3 4"
-      "5 6";
+  .emphasis {
+    font-size: 3rem;
   }
 }
