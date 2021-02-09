@@ -1,0 +1,43 @@
+header.topnav {
+    height: 10vh;
+    justify-content: center;
+}
+
+.profile-page {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    width: 75%;
+    margin: 2rem auto;
+}
+
+
+main {
+background-color: #f1f0ed;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile-picture > div {
+    width: fit-content;
+    padding: 20px;
+}
+
+.profile-picture > img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.my-articles {
+    margin: 0 3rem;
+}
+
+.essay-card-info {
+    width: 100%;
+    padding: 0;
+}
