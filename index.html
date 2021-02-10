@@ -15,6 +15,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      header.topnav {
+        height: 70vh;
+      }
+      @media only screen and (max-width: 524px){
+        header.topnav {
+          height: 100vh;
+        }
+      }
+    </style>
     <title>Discourse | Get Off Your Soapbox and Start a Conversation</title>
   </head>
   <body>
@@ -39,7 +49,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./pages/new-discussion.html">Start a Discussion</a>
+              <a class="nav-link" href="./pages/new-discussion.html"
+                >Start a Discussion</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/profile.html">My Profile</a>
@@ -48,7 +60,10 @@
         </div>
       </nav>
       <div class="catch-phrase">
-        <p>get off your soapbox &amp; <br> <span class='emphasis'>Start a Conversation</span></p>
+        <p>
+          get off your soapbox &amp; <br />
+          <span class="emphasis">Start a Conversation</span>
+        </p>
       </div>
     </header>
     <aside class="leftnav"></aside>
@@ -146,97 +161,109 @@
       </article>
 
       <div class="read-more-communities-container">
-          <div class="something-to-read">
-            <h1>Something to Read</h1>
-            <div class="essay-card">
-              <div>
-                <img class="circle" src="./images/man-small.jpg" alt="">
-              </div>
-              <div class="essay-card-info">
-                <a href="/pages/profile.html" class="trending-author">Kaladin Stormy</a>
-                <a href="/pages/hacking.html" class="trending-title">
-                  Response: Chuck Norris is still the best and why you'd better
-                  believe it.
-                </a>
-                <p>
-                  Another omission in Act 2, Scene 5 is much of the dialogue
-                  between Osric and Hamlet. Their interaction in the text paints
-                  Osric as a bit of a buffoon, a character to offer some comedic
-                  relief before the tragic climax of the play. Zeffirelli
-                  chooses to cut out the lines that indicate Osric’s
-                  foolishness, and the majority of Hamlet’s witty responses to
-                  him. Zeffirelli instead uses Olric’s character as a solemn
-                  indication of the climax to come
-                </p>
-                <div class="trending-date-length">
-                  <time datetime="3-12-2021">Mar 12, 2021</time> - 2 min read
-                </div>
-              </div>
+        <div class="something-to-read">
+          <h1>Something to Read</h1>
+          <div class="essay-card">
+            <div>
+              <img class="circle" src="./images/man-small.jpg" alt="" />
             </div>
-            <div class="essay-card">
-              <div>
-                <img class="circle" src="./images/girl-small.jpg" alt="">
-              </div>
-              <div class="essay-card-info">
-                <a href="/pages/profile.html" class="trending-author">Bruce Lee</a>
-                <a href="/pages/hacking.html" class="trending-title">
-                  Response: Why Chuck Norris isn't even that big of a deal.
-                </a>
-                <p>
-                  At the beginning of scene two, Zeffirelli omits Hamlet’s
-                  recount of his journey towards England and subsequent return.
-                  In the film, he instead chooses a visual telling of this story
-                  several scenes earlier. This encourages a more chronological
-                  timeline, yet in doing so, we lose a meaningful encounter
-                  between Horatio and Hamlet. From Horatio’s simple one-line
-                  responses it is pretty clear that the purpose of this display
-                  in the text is to explain
-                </p>
-                <div class="trending-date-length">
-                  <time datetime="3-9-2021">Mar 11, 2021</time> - 7 min read
-                </div>
-              </div>
-            </div>
-            <div class="essay-card">
-              <div>
-                <img class="circle" src="/images/pexels-andrew-dick-697509-small.jpg" alt="">
-              </div>
-              <div class="essay-card-info">
-                <a href="/pages/profile.html" class="trending-author">Chuck Norris</a>
-                <a href="/pages/hacking.html" class="trending-title">
-                  Why I'm not even that big of a deal.
-                </a>
-                <p>
-                  In his film adaptation of William Shakespeare’s classic
-                  tragedy Hamlet, Franco Zeffirelli removes key elements of the
-                  text in favor of visual explanations and a more chronological
-                  performance. In doing so, he strips some of the depth from the
-                  characters and tells it as he sees it. While this can make
-                  Shakespeare’s plays easier to understand for modern audiences,
-                  it removes much of the tension, humor and other emotions that
-                  are both implied an
-                </p>
-                <div class="trending-date-length">
-                  <time datetime="3-9-2021">Mar 9, 2021</time> - 777 min read
-                </div>
+            <div class="essay-card-info">
+              <a href="/pages/profile.html" class="trending-author"
+                >Kaladin Stormy</a
+              >
+              <a href="/pages/hacking.html" class="trending-title">
+                Response: Chuck Norris is still the best and why you'd better
+                believe it.
+              </a>
+              <p>
+                Another omission in Act 2, Scene 5 is much of the dialogue
+                between Osric and Hamlet. Their interaction in the text paints
+                Osric as a bit of a buffoon, a character to offer some comedic
+                relief before the tragic climax of the play. Zeffirelli chooses
+                to cut out the lines that indicate Osric’s foolishness, and the
+                majority of Hamlet’s witty responses to him. Zeffirelli instead
+                uses Olric’s character as a solemn indication of the climax to
+                come
+              </p>
+              <div class="trending-date-length">
+                <time datetime="3-12-2021">Mar 12, 2021</time> - 2 min read
               </div>
             </div>
           </div>
+          <div class="essay-card">
+            <div>
+              <img class="circle" src="./images/girl-small.jpg" alt="" />
+            </div>
+            <div class="essay-card-info">
+              <a href="/pages/profile.html" class="trending-author"
+                >Bruce Lee</a
+              >
+              <a href="/pages/hacking.html" class="trending-title">
+                Response: Why Chuck Norris isn't even that big of a deal.
+              </a>
+              <p>
+                At the beginning of scene two, Zeffirelli omits Hamlet’s recount
+                of his journey towards England and subsequent return. In the
+                film, he instead chooses a visual telling of this story several
+                scenes earlier. This encourages a more chronological timeline,
+                yet in doing so, we lose a meaningful encounter between Horatio
+                and Hamlet. From Horatio’s simple one-line responses it is
+                pretty clear that the purpose of this display in the text is to
+                explain
+              </p>
+              <div class="trending-date-length">
+                <time datetime="3-9-2021">Mar 11, 2021</time> - 7 min read
+              </div>
+            </div>
+          </div>
+          <div class="essay-card">
+            <div>
+              <img
+                class="circle"
+                src="/images/pexels-andrew-dick-697509-small.jpg"
+                alt=""
+              />
+            </div>
+            <div class="essay-card-info">
+              <a href="/pages/profile.html" class="trending-author"
+                >Chuck Norris</a
+              >
+              <a href="/pages/hacking.html" class="trending-title">
+                Why I'm not even that big of a deal.
+              </a>
+              <p>
+                In his film adaptation of William Shakespeare’s classic tragedy
+                Hamlet, Franco Zeffirelli removes key elements of the text in
+                favor of visual explanations and a more chronological
+                performance. In doing so, he strips some of the depth from the
+                characters and tells it as he sees it. While this can make
+                Shakespeare’s plays easier to understand for modern audiences,
+                it removes much of the tension, humor and other emotions that
+                are both implied an
+              </p>
+              <div class="trending-date-length">
+                <time datetime="3-9-2021">Mar 9, 2021</time> - 777 min read
+              </div>
+            </div>
+          </div>
+        </div>
         <aside class="communities">
           <h1>Check Out Popular Tags</h1>
           <ul>
-            <li><a href="#">Politics</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="#">Environment</a></li>
-            <li><a href="#">Biology</a></li>
-            <li><a href="#">Literature</a></li>
+            <li><a href="./pages/new-discussion.html">Politics</a></li>
+            <li><a href="./pages/new-discussion.html">Software</a></li>
+            <li><a href="./pages/new-discussion.html">Environment</a></li>
+            <li><a href="./pages/new-discussion.html">Biology</a></li>
+            <li><a href="./pages/new-discussion.html">Literature</a></li>
           </ul>
         </aside>
       </div>
     </main>
     <footer>
       <span>Copyright &copy; 2021 Jonathan Wilding</span>
-      <a href="https://github.com/j-wilding/discourse" class="footer-nav">Github</a>
+      <a href="https://github.com/j-wilding/discourse" class="footer-nav"
+        >Github</a
+      >
       <!-- <a href="#" class="footer-nav">Blog</a>
       <a href="#" class="footer-nav">Support</a> -->
     </footer>
