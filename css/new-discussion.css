@@ -21,10 +21,28 @@ input.form-control { width: 320px!important; }
     padding: 1rem;
     background-color: #800033;
     color: #FFF;
-
 }
 
 .align-center {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 524px) {
+    .search-topics {
+        flex-direction: column;
+    }
+
+    label {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        width: 250px;
+    }
+
+    input.form-control { width: 200px!important; }
+}
+
+@media only screen and (max-width: 374px) {
+    input.form-control { width: 150px!important; }
 }
