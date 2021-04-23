@@ -1,3 +1,3 @@
 # discourse
 
-(https://discourse.jonathanwilding.com)[Start a Discussion]
+[Start a Discussion](https://discourse.jonathanwilding.com)
